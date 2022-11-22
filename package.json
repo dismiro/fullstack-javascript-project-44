@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/dismiro/fullstack-javascript-project-44/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/dismiro/fullstack-javascript-project-44#readme"
 }
