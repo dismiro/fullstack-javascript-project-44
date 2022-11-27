@@ -1,4 +1,4 @@
 #!/snap/bin/node
-import startGame from '../src/even_game.js';
+import startGame from '../src/games/even_game.js';
 
 startGame();
