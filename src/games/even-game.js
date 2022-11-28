@@ -9,8 +9,7 @@ function calcCorrectAnswer(num) {
 }
 
 function getGameData() {
-  const maxNum = 10; // sets the maximum bounds of numbers
-  const question = getRandomInt(maxNum);
+  const question = getRandomInt();
   const correctAnswer = calcCorrectAnswer(question);
   return [question, correctAnswer];
 }
