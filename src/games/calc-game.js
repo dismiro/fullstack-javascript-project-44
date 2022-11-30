@@ -21,7 +21,7 @@ function getGameData() {
   const operators = ['+', '-', '*'];
   const firstComponent = getRandomInt();
   const secondComponent = getRandomInt();
-  const operator = operators[getRandomInt(operators.length - 1)];
+  const operator = operators[getRandomInt(0, operators.length - 1)];
   const question = `${firstComponent} ${operator} ${secondComponent}`;
   const answer = String(calcCorrectAnswer(firstComponent, secondComponent, operator));
   return [question, answer];

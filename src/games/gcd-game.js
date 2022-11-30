@@ -13,9 +13,11 @@ function calcCorrectAnswer(number1, number2) {
 }
 
 function getGameData() {
+  // setting number limits
+  const lowerBoudnInt = 1;
   const upperBoundInt = 30; // sets the upper bound of the numbers
-  const firstComponent = getRandomInt(upperBoundInt);
-  const secondComponent = getRandomInt(upperBoundInt);
+  const firstComponent = getRandomInt(lowerBoudnInt, upperBoundInt);
+  const secondComponent = getRandomInt(lowerBoudnInt, upperBoundInt);
   const question = `${firstComponent} ${secondComponent}`;
   const answer = String(calcCorrectAnswer(firstComponent, secondComponent));
   return [question, answer];

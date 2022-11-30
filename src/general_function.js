@@ -1,4 +1,6 @@
-function getRandomInt(maxValue = 10) {
-  return Math.floor(Math.random() * (maxValue + 1));
+function getRandomInt(minValue = 1, maxValue = 10) {
+  const min = Math.ceil(minValue);
+  const max = Math.ceil(maxValue);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 export default getRandomInt;
